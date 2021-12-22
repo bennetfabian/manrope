@@ -2,7 +2,6 @@
 
 set -e
 
-
 echo "Generating Static fonts"
 
 mkdir -p ./fonts/
@@ -11,13 +10,13 @@ mkdir -p ./fonts/TTF/
 echo "Made font directories"
  
 echo "Generating static TTFs"
-#fontmake -g source/manrope.glyphs -o ttf --round-instances -a --keep-direction -i --output-dir ./fonts/TTF/
-#fontmake -g source/manrope-italic.glyphs -o ttf --round-instances -a --keep-direction -i --output-dir ./fonts/TTF/
+fontmake -g source/manrope.glyphs -o ttf --round-instances -a --keep-direction -i --output-dir ./fonts/TTF/
+fontmake -g source/manrope-italic.glyphs -o ttf --round-instances -a --keep-direction -i --output-dir ./fonts/TTF/
 echo "Made static TTFs"
 
 echo "Generating static OTFs"
-#fontmake -g source/manrope.glyphs -o otf --round-instances -a --keep-direction -i --output-dir ./fonts/OTF/
-#fontmake -g source/manrope-italic.glyphs -o otf --round-instances -a --keep-direction -i --output-dir ./fonts/OTF/
+fontmake -g source/manrope.glyphs -o otf --round-instances -a --keep-direction -i --output-dir ./fonts/OTF/
+fontmake -g source/manrope-italic.glyphs -o otf --round-instances -a --keep-direction -i --output-dir ./fonts/OTF/
 echo "Made static OTFs"
 
 echo "Generating VFs"
@@ -66,4 +65,4 @@ do
 done
 fontbakery check-universal --ghmarkdown ./fonts/checks.md $otfs $ttfs ./fonts/Manrope\[wght\].ttf ./fonts/Manrope-Italic\[wght\].ttf
 
-echo "build complete"
+echo "Build complete"
