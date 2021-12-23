@@ -2,3 +2,4 @@ fontmake
 fontbakery
 gftools
 fonttools
+ttfautohint
