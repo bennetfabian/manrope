@@ -1,9 +1,9 @@
 sources:
   - Manrope.glyphs
-  - Manrope-Italic.glyphs
 axisOrder:
   - wght
 familyName: Manrope
+buildWebfont: false
 stat:
   Manrope[wght].ttf:
   - name: Weight
@@ -24,24 +24,4 @@ stat:
     - name: Bold
       value: 700
     - name: ExtraBold
-      value: 800
-  Manrope-Italic[wght].ttf:
-  - name: Weight
-    tag: wght
-    values:
-    - name: ExtraLight Italic
-      value: 200
-    - name: Light Italic
-      value: 300
-    - name: Regular Italic
-      value: 400
-      linkedValue: 700
-      flags: 2
-    - name: Medium Italic
-      value: 500
-    - name: SemiBold Italic
-      value: 600
-    - name: Bold Italic
-      value: 700
-    - name: ExtraBold Italic
       value: 800
